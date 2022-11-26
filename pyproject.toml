@@ -11,7 +11,13 @@ license = "MIT"
 authors = [{ name = "João Palmeiro", email = "jm.palmeiro@campus.fct.unl.pt" }]
 classifiers = [
   "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
   "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
@@ -47,3 +53,8 @@ dependencies = ["interrogate"]
 i = "interrogate -vv ."
 ib = "interrogate --generate-badge assets/ --badge-style flat"
 check = "pip list"
+
+# https://github.com/pypa/hatch/blob/hatch-v1.6.3/pyproject.toml#L72
+# https://hatch.pypa.io/1.6/build/#configuration
+[tool.hatch.build.targets.sdist]
+exclude = [".github/", ".vscode/", "assets/", "dev.py"]

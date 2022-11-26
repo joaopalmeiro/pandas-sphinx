@@ -16,6 +16,9 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_markdown.html
 - https://github.com/pandas-dev/pandas/blob/v1.1.0/pandas/core/frame.py#L2240
 - https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.DataFrame.to_markdown.html
+- https://github.com/koaning/scikit-bloom/blob/main/setup.py
+- https://github.com/scikit-hep/cookie
+- https://numpydoc.readthedocs.io/en/stable/format.html + https://numpydoc.readthedocs.io/en/stable/example.html
 
 ## Notes
 
@@ -35,4 +38,5 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch version minor` or `hatch version patch`
   - `hatch version`
   - `hatch run lint:i` + `hatch run lint:ib`
+  - `rm -rf dist/` + `hatch build`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
