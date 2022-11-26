@@ -1,6 +1,7 @@
 # pandas-sphinx
 
 [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+[![Documentation Coverage](assets/interrogate_badge.svg)](https://github.com/econchick/interrogate)
 
 Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table for [Sphinx](https://www.sphinx-doc.org/).
 
@@ -33,4 +34,5 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch shell` + `python dev.py` + `exit`
   - `hatch version minor` or `hatch version patch`
   - `hatch version`
+  - `hatch run lint:i` + `hatch run lint:ib`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html

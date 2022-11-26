@@ -38,3 +38,12 @@ dependencies = ["black", "isort"]
 i = "isort --profile black ."
 b = "black ."
 check = "pip list"
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = ["interrogate"]
+
+[tool.hatch.envs.lint.scripts]
+i = "interrogate -vv ."
+ib = "interrogate --generate-badge assets/ --badge-style flat"
+check = "pip list"
