@@ -36,13 +36,16 @@ Source = "https://github.com/joaopalmeiro/pandas-sphinx"
 # path = "pandas_sphinx/__init__.py"
 path = "pandas_sphinx/version.py"
 
+# https://github.com/dzhu/rstfmt
+# https://github.com/LilSpazJoekp/docstrfmt
 [tool.hatch.envs.format]
 detached = true
-dependencies = ["black", "isort"]
+dependencies = ["black", "isort", "rstfmt"]
 
 [tool.hatch.envs.format.scripts]
 i = "isort --profile black ."
 b = "black ."
+r = "rstfmt docs/ --verbose"
 check = "pip list"
 
 [tool.hatch.envs.lint]
@@ -62,7 +65,7 @@ exclude = [".github/", ".vscode/", "assets/", "dev.py"]
 
 # https://github.com/cjolowicz/cookiecutter-hypermodern-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/pyproject.toml#L27
 [tool.hatch.envs.docs]
-dependencies = ["sphinx", "sphinx-rtd-theme"]
+dependencies = ["sphinx", "sphinx-rtd-theme", "sphinx-copybutton"]
 
 # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
 # https://github.com/cjolowicz/cookiecutter-hypermodern-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/noxfile.py#L208

@@ -19,6 +19,8 @@ extensions = [
     "sphinx.ext.autodoc",
     # https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
     "sphinx.ext.napoleon",
+    # https://github.com/executablebooks/sphinx-copybutton
+    "sphinx_copybutton",
 ]
 
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalization
@@ -42,4 +44,4 @@ napoleon_google_docstring = False
 napoleon_numpy_docstring = True
 
 # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#configuration
-autodoc_member_order = "bysource"
+# autodoc_member_order = "bysource"

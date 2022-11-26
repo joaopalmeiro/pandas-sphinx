@@ -11,7 +11,11 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
 - https://github.com/yehoshuadimarsky/bcpandas#quickstart
 - https://github.com/yehoshuadimarsky/bcpandas/blob/master/bcpandas/main.py#L309
 - https://github.com/Zsailer/pandas_flavor
-- https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables
+- Sphinx:
+  - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables
+  - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks
+  - https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block
+  - https://pygments.org/docs/lexers/#lexers-for-various-shells
 - https://github.com/astanin/python-tabulate#table-format
 - https://en.wikipedia.org/wiki/Ellipsis
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_markdown.html
@@ -48,5 +52,6 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch publish --help`
   - `hatch env create docs`
   - `hatch run docs:check`
+  - `hatch -e format run rstfmt --help`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
 - Check if docstrings exist with [interrogate](https://github.com/econchick/interrogate), check their format with [darglint](https://github.com/terrencepreilly/darglint)
