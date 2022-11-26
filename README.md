@@ -1,5 +1,6 @@
 # pandas-sphinx
 
+[![PyPI](https://img.shields.io/pypi/v/pandas-sphinx)](https://pypi.org/project/pandas-sphinx/)
 [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
 [![Documentation Coverage](https://raw.githubusercontent.com/joaopalmeiro/pandas-sphinx/main/assets/interrogate_badge.svg)](https://github.com/econchick/interrogate)
 
@@ -34,7 +35,7 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch run format:i` + `hatch run format:b`
   - `hatch env prune`
   - `hatch env show`
-  - `hatch shell` + `python dev.py` + `exit`
+  - `hatch shell` + `python dev.py` + `exit` or `hatch run python dev.py`
   - `hatch version minor` or `hatch version patch`
   - `hatch version`
   - `hatch run lint:i` + `hatch run lint:ib`
