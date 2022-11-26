@@ -16,6 +16,7 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks
   - https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block
   - https://pygments.org/docs/lexers/#lexers-for-various-shells
+  - https://raw.githubusercontent.com/readthedocs/sphinx_rtd_theme/master/docs/index.rst
 - https://github.com/astanin/python-tabulate#table-format
 - https://en.wikipedia.org/wiki/Ellipsis
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_markdown.html

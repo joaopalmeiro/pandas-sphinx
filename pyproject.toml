@@ -61,7 +61,7 @@ check = "pip list"
 # https://github.com/pypa/hatch/blob/hatch-v1.6.3/pyproject.toml#L72
 # https://hatch.pypa.io/1.6/build/#configuration
 [tool.hatch.build.targets.sdist]
-exclude = [".github/", ".vscode/", "assets/", "dev.py"]
+exclude = [".github/", ".vscode/", "assets/", "dev.py", "docs/"]
 
 # https://github.com/cjolowicz/cookiecutter-hypermodern-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/pyproject.toml#L27
 [tool.hatch.envs.docs]
