@@ -1,0 +1,23 @@
+name: Publish to PyPI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "pandas_sphinx/version.py"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
+      - name: Install dependencies
+        run: pip install hatch==1.6.3
+      - name: Build
+        run: hatch build
+      - name: Publish
+        run: hatch publish -u __token__ -a ${{ secrets.PYPI_API_TOKEN }}

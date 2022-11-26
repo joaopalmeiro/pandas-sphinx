@@ -39,4 +39,5 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch version`
   - `hatch run lint:i` + `hatch run lint:ib`
   - `rm -rf dist/` + `hatch build`
+  - `hatch publish --help`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
