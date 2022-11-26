@@ -19,7 +19,11 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
 - https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.DataFrame.to_markdown.html
 - https://github.com/koaning/scikit-bloom/blob/main/setup.py
 - https://github.com/scikit-hep/cookie
-- https://numpydoc.readthedocs.io/en/stable/format.html + https://numpydoc.readthedocs.io/en/stable/example.html
+- Documentation:
+  - https://numpydoc.readthedocs.io/en/stable/format.html + https://numpydoc.readthedocs.io/en/stable/example.html
+  - https://cjolowicz.github.io/posts/hypermodern-python-05-documentation/
+  - https://cjolowicz.github.io/posts/hypermodern-python-06-ci-cd/
+  - https://nashpy.readthedocs.io/en/stable/contributing/discussion/darglint/index.html
 
 ## Notes
 
@@ -38,7 +42,9 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch shell` + `python dev.py` + `exit` or `hatch run python dev.py`
   - `hatch version minor` or `hatch version patch`
   - `hatch version`
-  - `hatch run lint:i` + `hatch run lint:ib`
+  - `hatch run lint:i` + `hatch run lint:ib` + `hatch run lint:d`
+  - `hatch -e lint run darglint --help`
   - `rm -rf dist/` + `hatch build`
   - `hatch publish --help`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+- Check if docstrings exist with [interrogate](https://github.com/econchick/interrogate), check their format with [darglint](https://github.com/terrencepreilly/darglint)

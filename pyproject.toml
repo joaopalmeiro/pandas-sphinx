@@ -47,11 +47,12 @@ check = "pip list"
 
 [tool.hatch.envs.lint]
 detached = true
-dependencies = ["interrogate"]
+dependencies = ["interrogate", "darglint"]
 
 [tool.hatch.envs.lint.scripts]
 i = "interrogate -vv ."
 ib = "interrogate --generate-badge assets/ --badge-style flat"
+d = "darglint -v 2 -s numpy ."
 check = "pip list"
 
 # https://github.com/pypa/hatch/blob/hatch-v1.6.3/pyproject.toml#L72
