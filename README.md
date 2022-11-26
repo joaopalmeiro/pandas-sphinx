@@ -1,7 +1,7 @@
 # pandas-sphinx
 
 [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
-[![Documentation Coverage](assets/interrogate_badge.svg)](https://github.com/econchick/interrogate)
+[![Documentation Coverage](https://raw.githubusercontent.com/joaopalmeiro/pandas-sphinx/main/assets/interrogate_badge.svg)](https://github.com/econchick/interrogate)
 
 Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table for [Sphinx](https://www.sphinx-doc.org/).
 

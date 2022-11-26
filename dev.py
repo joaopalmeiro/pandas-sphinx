@@ -1,3 +1,5 @@
+"""Development script for the pandas-sphinx package."""
+
 import pandas as pd
 
 from pandas_sphinx import __version__, to_sphinx
