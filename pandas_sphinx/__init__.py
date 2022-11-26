@@ -1,6 +1,5 @@
 from .constants import DATA_ROW_SEP, ELLIPSIS, LINE_SEP
-
-__version__ = "0.1.0"
+from .version import __version__
 
 
 def to_sphinx(df, show_index=False, number_rows=1):

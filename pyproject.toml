@@ -27,7 +27,8 @@ Issues = "https://github.com/joaopalmeiro/pandas-sphinx/issues"
 Source = "https://github.com/joaopalmeiro/pandas-sphinx"
 
 [tool.hatch.version]
-path = "pandas_sphinx/__init__.py"
+# path = "pandas_sphinx/__init__.py"
+path = "pandas_sphinx/version.py"
 
 [tool.hatch.envs.format]
 detached = true
