@@ -46,5 +46,7 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch -e lint run darglint --help`
   - `rm -rf dist/` + `hatch build`
   - `hatch publish --help`
+  - `hatch env create docs`
+  - `hatch run docs:check`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
 - Check if docstrings exist with [interrogate](https://github.com/econchick/interrogate), check their format with [darglint](https://github.com/terrencepreilly/darglint)

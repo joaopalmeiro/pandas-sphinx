@@ -59,3 +59,15 @@ check = "pip list"
 # https://hatch.pypa.io/1.6/build/#configuration
 [tool.hatch.build.targets.sdist]
 exclude = [".github/", ".vscode/", "assets/", "dev.py"]
+
+# https://github.com/cjolowicz/cookiecutter-hypermodern-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/pyproject.toml#L27
+[tool.hatch.envs.docs]
+dependencies = ["sphinx", "sphinx-rtd-theme"]
+
+# https://www.sphinx-doc.org/en/master/man/sphinx-build.html
+# https://github.com/cjolowicz/cookiecutter-hypermodern-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/noxfile.py#L208
+[tool.hatch.envs.docs.scripts]
+clean = "rm -rf docs/_build"
+build = "sphinx-build -b html -W docs docs/_build"
+open = "python -m http.server --directory docs/_build"
+check = "pip list"
