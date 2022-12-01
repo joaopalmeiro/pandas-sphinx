@@ -6,6 +6,10 @@
 
 Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table for [Sphinx](https://www.sphinx-doc.org/).
 
+- **Documentation**: https://joaopalmeiro.github.io/pandas-sphinx/
+- **Source code**: https://github.com/joaopalmeiro/pandas-sphinx
+- **Python package**: https://pypi.org/project/pandas-sphinx/
+
 ## References
 
 - https://github.com/yehoshuadimarsky/bcpandas#quickstart
