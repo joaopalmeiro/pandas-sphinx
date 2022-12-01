@@ -7,6 +7,26 @@ from .version import __version__
 def to_sphinx(df, show_index=False, number_rows=1):
     """Convert a pandas DataFrame into a Sphinx-based table ready to be added to a docstring.
 
+    A default output table looks like this:
+
+    .. code::
+
+        +--------+-------+
+        | item   |   qty |
+        +========+=======+
+        | spam   |    42 |
+        +--------+-------+
+        | …      | …     |
+        +--------+-------+
+
+    +--------+-------+
+    | item   |   qty |
+    +========+=======+
+    | spam   |    42 |
+    +--------+-------+
+    | …      | …     |
+    +--------+-------+
+
     Parameters
     ----------
     df : pandas.DataFrame

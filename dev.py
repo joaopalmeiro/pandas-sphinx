@@ -15,6 +15,8 @@ if __name__ == "__main__":
         [["spam", 42], ["eggs", 451], ["bacon", 0]], columns=["item", "qty"]
     )
 
+    print(df.to_markdown(tablefmt="grid"))
+
     formatted_df = to_sphinx(df)
 
     print(formatted_df)

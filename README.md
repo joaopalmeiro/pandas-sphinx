@@ -54,5 +54,8 @@ Render a [pandas](https://pandas.pydata.org/) DataFrame as an opinionated table 
   - `hatch env create docs`
   - `hatch run docs:check`
   - `hatch -e format run rstfmt --help`
+  - `hatch run docs:build` + `hatch run docs:open`
+  - `hatch run docs:clean`
+  - `hatch run docs:clean && hatch run docs:build && hatch run docs:open`
 - https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
 - Check if docstrings exist with [interrogate](https://github.com/econchick/interrogate), check their format with [darglint](https://github.com/terrencepreilly/darglint)
