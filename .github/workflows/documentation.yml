@@ -1,0 +1,33 @@
+# https://coderefinery.github.io/documentation/gh_workflow/
+# https://www.sphinx-doc.org/en/master/tutorial/deploying.html#id5
+# https://github.com/ammaraskar/sphinx-action
+# https://github.com/peaceiris/actions-gh-pages
+# https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-force-orphan-force_orphan
+
+name: Publish documentation to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "pandas_sphinx/version.py"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
+      - name: Install dependencies
+        run: pip install hatch==1.6.3
+      - name: Build
+        run: hatch run docs:build
+      - name: Publish
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/
+          force_orphan: true
